@@ -1,6 +1,6 @@
 
 <template>
-  <itemwrap itemType="home"></itemwrap>
+  <itemwrap itemType="item"></itemwrap>
 </template>
 
 
@@ -9,7 +9,7 @@
 import itemwrap from '../components/ItemWrap.vue';
 
 export default {
-  name: 'home',
+  name: 'item',
   components: {
     itemwrap
   }

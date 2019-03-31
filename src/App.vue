@@ -1,31 +1,43 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+    <router-view></router-view>
 </template>
 
+<script>
+// @ is an alias to /src
+
+export default {
+  name: 'app'
+}
+</script>
+
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4, h5, i, b, textarea, button, input, select {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: normal;
+    text-decoration: none;
+    border: none;
+    color: #313131;
+    box-sizing: border-box;
+    font-weight: lighter;
+    font-family: 'Microsoft YaHei';
+    -webkit-tap-highlight-color: transparent;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+html {
+    height: 100%;
+    width: 100%;
 }
+
+body {
+    background: url('./assets/images/1-1.jpg') no-repeat;
+    background-size: 100% 100%;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+}
+
 </style>
